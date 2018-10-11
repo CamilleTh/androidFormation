@@ -35,6 +35,10 @@ public class MainActivity extends Activity {
     private TextView result;
     private TextView ope;
 
+    private  double d1,d2;
+    private Result r;
+
+
     private boolean number1Ok = false;
     private boolean number2Ok = false;
 
@@ -108,22 +112,33 @@ public class MainActivity extends Activity {
             }
         });
 
+
+
         Intent intent = new Intent(this,EngineService.class);
         if(bindService(intent, connection, Context.BIND_AUTO_CREATE)){
             add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    double    d1 = Double.parseDouble(number1.getText().toString());
-                    double    d2 = Double.parseDouble(number2.getText().toString());
+                    d1 = Double.parseDouble(number1.getText().toString());
+                    d2 = Double.parseDouble(number2.getText().toString());
 
                     Log.v(TAG,d1+ "+" +d2);
 
-                    Result r = engineService.add(d1,d2);
-                    result.setText(r.getResultat()+"");
-                    ope.setText(r.getOperation()+"");
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                             r = engineService.add(d1,d2);
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    result.setText(r.getResultat()+"");
+                                    ope.setText(r.getOperation()+"");
+                                }
+                            });
 
-
+                        }
+                    }).start();
                 }
             });
 

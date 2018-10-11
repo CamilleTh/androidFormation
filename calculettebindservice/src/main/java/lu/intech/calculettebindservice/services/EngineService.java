@@ -26,7 +26,7 @@ public class EngineService extends Service {
 
     public Result add(double d1, double d2){
         try{
-            Thread.sleep(10000);
+            Thread.sleep(5000);
         }catch (Exception e){
 
         }
