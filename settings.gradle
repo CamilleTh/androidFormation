@@ -1,1 +1,1 @@
-include ':app', ':calculettesansretour', ':calculetteavecretour', ':calculetteavecretourparcelable', ':appel', ':calculetteintentservice', ':calculettebindservice'
+include ':app', ':calculettesansretour', ':calculetteavecretour', ':calculetteavecretourparcelable', ':appel', ':calculetteintentservice', ':calculettebindservice', ':calculetteserviceaidl', ':calculetteserviceaidl', ':calculetteserviceaidlclient'
