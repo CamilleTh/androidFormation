@@ -20,6 +20,11 @@ import lu.intech.calculettebindservice.services.Result;
 
 public class MainActivity extends Activity {
 
+    // NOTE
+    // unBindService utlise le thread de l'interface graphique
+    // si on met un sleep dans l'EngineSerivce on freeze l'interface graphique
+    // c'est pas le cas avec l'intentservice
+
     private String TAG = "MainActivityTag";
     private EditText number1;
     private EditText number2;
