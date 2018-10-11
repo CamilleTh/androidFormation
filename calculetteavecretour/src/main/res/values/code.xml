@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="codeAdd" type="integer" format="integer">1</item>
+    <item name="codeSub" type="integer" format="integer">2</item>
+    <item name="codeMul" type="integer" format="integer">3</item>
+    <item name="codeDiv" type="integer" format="integer">4</item>
+</resources>

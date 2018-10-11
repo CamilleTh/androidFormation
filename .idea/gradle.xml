@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appel" />
+            <option value="$PROJECT_DIR$/calculetteavecretour" />
+            <option value="$PROJECT_DIR$/calculetteavecretourparcelable" />
+            <option value="$PROJECT_DIR$/calculettebindservice" />
+            <option value="$PROJECT_DIR$/calculetteintentservice" />
+            <option value="$PROJECT_DIR$/calculettesansretour" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">calculetteIntentService</string>
+    <string name="hint1">Valeur 1</string>
+    <string name="hint2">Valeur 2</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="mul">X</string>
+    <string name="div">/</string>
+    <string name="ope">Opérateur</string>
+    <string name="result">Résultat</string>
+    <string name="divbyzero">ERROR DIV BY 0</string>
+</resources>

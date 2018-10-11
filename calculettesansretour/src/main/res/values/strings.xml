@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CalculetteSansRetour</string>
+    <string name="hint1">Valeur 1</string>
+    <string name="hint2">Valeur 2</string>
+    <string name="calcul">Additionner</string>
+    <string name="result">Résultat</string>
+</resources>
