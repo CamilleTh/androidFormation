@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculetteAvecService</string>
+    <string name="title_activity_calcul">CalculActivity</string>
+    <string name="resultat">Somme=</string>
+    <string name="noChiffremsg">Pensez à saisir des chiffres!</string>
+    <string name="action_name">com.scha.action.receveur</string>
+    <string name="service_name">com.scha.calculetteavecservice</string>
+</resources>

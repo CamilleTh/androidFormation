@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TacheAsynchrone</string>
+    <string name="label_bouton_lancer">Lancer la tâche !</string>
+    <string name="label_barre">Progression de la tâche</string>
+</resources>

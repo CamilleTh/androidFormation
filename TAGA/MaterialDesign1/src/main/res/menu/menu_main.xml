@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".actvites.MainActivity">
+
+    <item android:title="@string/action_chercher"
+        android:id="@+id/action_chercher"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_search" />
+    <item android:title="@string/action_parametres"
+        android:id="@+id/action_parametres"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

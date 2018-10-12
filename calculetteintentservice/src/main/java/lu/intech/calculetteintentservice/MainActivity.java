@@ -2,8 +2,10 @@ package lu.intech.calculetteintentservice;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.Editable;
@@ -48,6 +50,10 @@ public class MainActivity extends Activity {
         myResultReceiver = new MyResultReceiver(result);
         myOperationReceiver = new MyOperationReceiver(ope);
         myBootCompletedReceiver = new MyBootCompletedReceiver();
+
+        SharedPreferences prefs= getPreferences(Context.MODE_PRIVATE);
+        String s = prefs.getString("maclé",null);
+
     }
 
     @Override

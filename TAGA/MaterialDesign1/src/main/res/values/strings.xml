@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MaterialDesign1</string>
+    <string name="action_parametres">Paramêtres</string>
+    <string name="action_chercher">Chercher</string>
+    <string name="drawer_ouvrir">Ouvrir</string>
+    <string name="drawer_fermer">Fermer</string>
+
+    <string name="nav_item_accueil">Accueil</string>
+    <string name="nav_item_amis">Amis</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <!-- labels de l'afficheur de navigation -->
+    <string-array name="labels_navigation">
+        <item>@string/nav_item_accueil</item>
+        <item>@string/nav_item_amis</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="titre_messages">Messages</string>
+    <string name="titre_amis">Amis</string>
+    <string name="titre_accueil">Accueil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

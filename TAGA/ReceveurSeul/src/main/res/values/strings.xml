@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ReceveurSeul</string>
+    <string name="texteBouton">Déclencher le\nBroadCastReceiver seul</string>
+    <string name="nomActionView">societe.com.action.VIEW</string>
+</resources>

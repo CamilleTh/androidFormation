@@ -7,8 +7,9 @@ import android.util.Log;
 
 public class MyBootCompletedReceiver extends BroadcastReceiver {
 
+
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.v("REC","BootCompleted");
+        Log.v("TOTO","BootCompleted");
     }
 }

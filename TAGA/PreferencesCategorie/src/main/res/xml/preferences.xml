@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Audio" >
+        <CheckBoxPreference
+            android:key="AutoriserSonnerie"
+            android:summary="Activez la sonnerie pour être notifié !"
+            android:title="Activer la sonnerie" />
+
+        <RingtonePreference
+            android:dependency="AutoriserSonnerie"
+            android:key="Sonnerie"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary="Choisissez une sonnerie"
+            android:title="Sonnerie" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Préférences avancées" >
+        <PreferenceScreen
+            android:key="EcranDetails"
+            android:summary="Préférences avancées"
+            android:title="Avancé" >
+            <CheckBoxPreference
+                android:key="PreferenceAvancee"
+                android:summary="Ma préférence avancée ..."
+                android:title="Préférences avancée" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

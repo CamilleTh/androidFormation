@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Receveur</string>
+    <string name="nomActionView">societe.com.action.VIEW</string>
+    <string name="texteBouton">Déclencher le\nBroadCastReceiver</string>
+    <string name="texteBoutonO">Déclencher les\nBroadCastReceivers\nordonnés</string>
+    <string name="texteBoutonLocalBr">Déclencher avec le LocalBroadcast</string>
+</resources>

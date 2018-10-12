@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pays_liste_preferences">
+    	<item>Angleterre</item>
+    	<item>Australie</item>
+    	<item>France</item>
+    	<item>Nouvelle Calédonie</item>
+    	<item>Nouvelle Zélande</item>
+    </array>
+    
+    <array name="pays_liste_valeurs_preferences">
+    	<item>England</item>
+    	<item>Australia</item>
+    	<item>France</item>
+    	<item>New Caledonia</item>
+    	<item>New Zeland</item>
+    </array>
+</resources>

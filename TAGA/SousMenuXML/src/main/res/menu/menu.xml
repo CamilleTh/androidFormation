@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_parametre"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/menuparametre"
+        android:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/sous_parametre1"
+                android:title="@string/sousmenuparametre1">
+            </item>
+            <item
+                android:id="@+id/sous_parametre2"
+                android:title="@string/sousmenuparametre2">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_quitter"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/menuquitter">
+    </item>
+</menu>

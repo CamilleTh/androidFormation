@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculetteSansRetour</string>
+    <string name="hint1">Taper l\'opérande 1</string>
+    <string name="hint2">Taper l\'opérande 2</string>
+    <string name="label_bouton">Calculer</string>
+    <string name="label_resultat">Résultat :</string>
+    <string name="label_mainActivity">SAISIE</string>
+    <string name="label_resultatActivity">RESULTAT</string>
+</resources>

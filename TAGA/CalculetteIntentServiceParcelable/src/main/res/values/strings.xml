@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CalculetteIntentServiceParcelable</string>
+    <string name="label_operande1">Taper l\'opérande1</string>
+    <string name="label_operande2">Taper l\'opérande2</string>
+    <string name="label_resultat">Résultat :</string>
+    <string name="title_activity_resultat">ResultatActivity</string>
+    <string name="labelBoutonAdd">+</string>
+    <string name="labelBoutonMoins">-</string>
+    <string name="labelBoutonDiv">/</string>
+    <string name="labelBoutonMul">*</string>
+    <string name="labelDivisionErreur">Division par zéro</string>
+    <string name="operationPlus">Opération +</string>
+    <string name="operationMoins">Opération -</string>
+    <string name="operationDiv">Opération /</string>
+    <string name="operationMul">Opération *</string>
+</resources>

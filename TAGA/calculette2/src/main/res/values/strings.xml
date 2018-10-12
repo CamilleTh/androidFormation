@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">calculette2</string>
+    <string name="label_operande1">Taper l\'opérande1</string>
+    <string name="label_operande2">Taper l\'opérande2</string>
+    <string name="label_bouton">+</string>
+    <string name="label_resultat">Résultat :</string>
+</resources>

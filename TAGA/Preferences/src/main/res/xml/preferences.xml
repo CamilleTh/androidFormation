@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:dialogTitle="Sélectionner votre pays :"
+        android:entries="@array/pays_liste_preferences"
+        android:entryValues="@array/pays_liste_valeurs_preferences"
+        android:key="preferences_pays"
+        android:summary="Veuillez sélectionner votre pays"
+        android:title="Liste de pays" />
+
+    <CheckBoxPreference
+        android:key="checkBox"
+        android:summary="Checkbox summary"
+        android:summaryOff="Cette case est désactivée, cochez la pour l'activer."
+        android:summaryOn="Cette case est activée, décochez la pour la désactiver."
+        android:title="Demo case à  cocher" />
+
+    <EditTextPreference
+        android:dependency="checkBox"
+        android:dialogTitle="Veuillez saisir un texte"
+        android:key="editText"
+        android:summary="Demo zone de texte"
+        android:title="Demo texte" />
+
+</PreferenceScreen>

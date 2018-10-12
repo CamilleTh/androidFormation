@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ListeAdaptateur</string>
+    <string-array name="nombres">
+        <item >un</item>
+        <item >deux</item>
+        <item >trois</item>
+        <item >quatre</item>
+        <item >cinq</item>
+        <item >six</item>
+        <item >sept</item>
+        <item >huit</item>
+        <item >neuf</item>
+        <item >dix</item>
+        <item >onze</item>
+        <item >douze</item>
+        <item >treize</item>
+        <item >quatorze</item>
+        <item >quize</item>
+        <item >seize</item>
+    </string-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notification</string>
+    <string name="ajouterNotification">Ajouter une notification</string>
+    <string name="supprimerNotification">Supprimer une notification</string>
+    <string name="notification">Notification com.societe</string>
+    <string name="notification_titre">Ma premiere notification societe.com</string>
+    <string name="notification_desc">Cliquez moi, je suis une notification</string>
+
+</resources>

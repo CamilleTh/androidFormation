@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".activites.MainActivity" >
+
+    <EditText
+        android:id="@+id/operande1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/label_operande1"
+        android:inputType="numberDecimal|numberSigned">
+
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/operande2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/label_operande2"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/operande1"
+        android:layout_alignLeft="@+id/operande1"
+        android:layout_alignStart="@+id/operande1"/>
+
+    <TextView
+        android:id="@+id/operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resultat"
+        android:layout_alignStart="@+id/resultat"
+        android:layout_below="@+id/buttonDiv"
+        android:layout_marginTop="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonDiv"
+        android:layout_alignStart="@+id/buttonDiv"
+        android:layout_below="@+id/operation"
+        android:layout_marginTop="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <Button
+        android:id="@+id/buttonMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDiv"
+        android:layout_alignBottom="@+id/buttonDiv"
+        android:layout_alignLeft="@+id/buttonMoins"
+        android:layout_alignStart="@+id/buttonMoins"
+        android:text="@string/labelBoutonMul"/>
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelBoutonAdd"
+        android:layout_alignBaseline="@+id/buttonMoins"
+        android:layout_alignBottom="@+id/buttonMoins"
+        android:layout_alignLeft="@+id/operande2"
+        android:layout_alignStart="@+id/operande2"/>
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:text="@string/labelBoutonDiv"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/buttonPlus"
+        android:layout_alignLeft="@+id/buttonPlus"
+        android:layout_alignStart="@+id/buttonPlus"/>
+
+    <Button
+        android:id="@+id/buttonMoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelBoutonMoins"
+        android:layout_below="@+id/operande2"
+        android:layout_alignRight="@+id/operande2"
+        android:layout_alignEnd="@+id/operande2"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

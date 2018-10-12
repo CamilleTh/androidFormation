@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MenuActionModeMul</string>
+    <string-array name="stagiaires">
+        <item >Stagiaire 1</item>
+        <item >Stagiaire 2</item>
+        <item >Stagiaire 3</item>
+        <item >Stagiaire 4</item>
+        <item >Stagiaire 5</item>
+        <item >Stagiaire 6</item>
+        <item >Stagiaire 7</item>
+        <item >Stagiaire 8</item>
+        <item >Stagiaire 9</item>
+        <item >Stagiaire 10</item>
+        <item >Stagiaire 11</item>
+        <item >Stagiaire 12</item>
+        <item >Stagiaire 13</item>
+        <item >Stagiaire 14</item>
+        <item >Stagiaire 15</item>
+        <item >Stagiaire 16</item>
+    </string-array>
+    <string name="menuquitter">Quitter</string>
+    <string name="menureinit">Réinitialiser</string>
+</resources>

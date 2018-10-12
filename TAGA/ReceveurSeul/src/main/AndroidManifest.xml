@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.societe.receveurseul">
+
+    <permission
+        android:name="societe.com.mapermission"
+        android:label="Ma permission"/>
+
+    <application
+        android:name=".ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <!--android:theme="@style/AppTheme">-->
+<!--        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>-->
+        <!--<receiver-->
+            <!--android:name=".ReceveurSeul"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true"-->
+            <!--android:permission="societe.com.mapermission">-->
+            <!--<intent-filter android:priority="3">-->
+                <!--<action android:name="societe.com.action.VIEW"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+
+</manifest>

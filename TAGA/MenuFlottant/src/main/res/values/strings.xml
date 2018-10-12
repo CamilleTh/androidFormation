@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MenuFlottant</string>
+    <string name="inviteMenu">Appuyer longuement ici</string>
+    <string name="menucontextuel1">Menu contextuel 1</string>
+    <string name="menucontextuel2">Menu contextuel 2</string>
+    <string name="menucontextuel3">Menu contextuel 3</string>
+    <string name="menucontextuel4">Menu contextuel 4</string>
+    <string name="menucontextuel5">Menu contextuel 5</string>
+    <string name="menucontextuel6">Menu contextuel 6</string>
+</resources>

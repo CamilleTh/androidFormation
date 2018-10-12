@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SousMenuXML</string>
+    <string name="inviteMenu">Appuyer sur l\'icône Menu</string>
+    <string name="menuparametre">Paramètres</string>
+    <string name="menuquitter">Quitter</string>
+    <string name="sousmenuparametre1">Paramètre 1</string>
+    <string name="sousmenuparametre2">Paramètre 2</string>
+</resources>
