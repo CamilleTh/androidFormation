@@ -9,4 +9,6 @@
     <string name="ope">Opérateur</string>
     <string name="result">Résultat</string>
     <string name="divbyzero">ERROR DIV BY 0</string>
+    <string name="myActionView">lu.intech.action.myreceiver</string>
+
 </resources>

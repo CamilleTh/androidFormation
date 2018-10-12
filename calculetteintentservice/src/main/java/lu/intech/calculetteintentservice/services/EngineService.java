@@ -2,9 +2,11 @@ package lu.intech.calculetteintentservice.services;
 
 import android.app.IntentService;
 import android.content.Intent;
+import android.content.res.Resources;
 
 import lu.intech.calculetteintentservice.MainActivity;
 import lu.intech.calculetteintentservice.Operation;
+import lu.intech.calculetteintentservice.R;
 
 
 /**
@@ -22,16 +24,22 @@ public class EngineService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
 
-        try{
+        /*try{
             Thread.sleep(5000);
         }catch (Exception e ){
 
-        }
+        }*/
 
         if (intent != null) {
             Operation operation = intent.getParcelableExtra("operation");
 
-            Intent intent2 = new Intent(this, MainActivity.class);
+            // METHODE AVEC ENVOI DINTENT VERS SINGLE TASK
+            //Intent intent2 = new Intent(this, MainActivity.class);
+
+            // METHODE AVEC BROADCASTRECEIVER
+            Resources res = getResources();
+            String myAction = res.getString(R.string.myActionView);
+            Intent intent2 = new Intent(myAction);
 
             Double result = 0.0;
             switch (operation.getOperator()){
@@ -58,9 +66,18 @@ public class EngineService extends IntentService {
                     break;
             }
 
-            intent2.putExtra("res",result);
+            // METHODE AVEC ENVOI DINTENT VERS SINGLE TASK
+           /* intent2.putExtra("res",result);
             intent2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent2);
+            startActivity(intent2);*/
+
+           // METHODE BROADCASTRECEVIER
+            intent2.putExtra("res",result);
+            sendOrderedBroadcast(intent2,null);
+
+
+
+
         }
     }
 }

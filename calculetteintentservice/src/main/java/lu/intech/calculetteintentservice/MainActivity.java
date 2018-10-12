@@ -1,7 +1,10 @@
 package lu.intech.calculetteintentservice;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -11,6 +14,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import lu.intech.calculetteintentservice.receiver.MyBootCompletedReceiver;
+import lu.intech.calculetteintentservice.receiver.MyOperationReceiver;
+import lu.intech.calculetteintentservice.receiver.MyResultReceiver;
 import lu.intech.calculetteintentservice.services.EngineService;
 
 public class MainActivity extends Activity {
@@ -29,11 +35,53 @@ public class MainActivity extends Activity {
     private boolean number1Ok = false;
     private boolean number2Ok = false;
 
+    private BroadcastReceiver myResultReceiver;
+    private BroadcastReceiver myOperationReceiver;
+    private BroadcastReceiver myBootCompletedReceiver;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bindview();
+        myResultReceiver = new MyResultReceiver(result);
+        myOperationReceiver = new MyOperationReceiver(ope);
+        myBootCompletedReceiver = new MyBootCompletedReceiver();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        unregisterReceiver(myResultReceiver);
+        unregisterReceiver(myOperationReceiver);
+        unregisterReceiver(myBootCompletedReceiver);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Resources res = this.getBaseContext().getResources();
+        String nomAction = res.getString(R.string.myActionView);
+
+        IntentFilter filtreIntent = new IntentFilter(nomAction);
+        filtreIntent.setPriority(2);
+        filtreIntent.addCategory(Intent.CATEGORY_DEFAULT);
+
+        IntentFilter filtreIntent2 = new IntentFilter(nomAction);
+        filtreIntent2.setPriority(1);
+        filtreIntent2.addCategory(Intent.CATEGORY_DEFAULT);
+
+        IntentFilter filtreIntent3 = new IntentFilter(Intent.ACTION_BOOT_COMPLETED);
+        filtreIntent3.setPriority(3);
+        filtreIntent3.addCategory(Intent.CATEGORY_HOME);
+
+        registerReceiver(myResultReceiver, filtreIntent);
+        registerReceiver(myOperationReceiver, filtreIntent2);
+        registerReceiver(myOperationReceiver, filtreIntent2);
+
+
     }
 
     private void bindview(){
@@ -159,6 +207,8 @@ public class MainActivity extends Activity {
         div.setEnabled(b);
     }
 
+    // METHODE AVEC ENVOI DINTENT VERS SINGLE TASK
+    // INUTILE DANS LETAT ON PASSE PAR LE BROADCAST RECEIVER
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
