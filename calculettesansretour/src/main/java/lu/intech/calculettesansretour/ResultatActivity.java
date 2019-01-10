@@ -1,6 +1,7 @@
 package lu.intech.calculettesansretour;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,13 +25,18 @@ public class ResultatActivity extends Activity {
         Intent intent = new Intent(this, CalculetteActivity.class);
         intent.putExtra("res",result);
 
-        // MODE 1
-        startActivity(intent);
+        if(CalculetteActivity.MODE == 1){
+            // MODE 1
+            startActivity(intent);
+        }else {  // MODE 2, 3
+            if(result < 0)  setResult(RESULT_CANCELED,intent);
+            else setResult(RESULT_OK,intent);
+            finish();
+        }
 
-        // MODE 2
-        /*if(result == 0)  setResult(RESULT_CANCELED,intent);
-        else setResult(RESULT_OK,intent);
-        finish();*/
+
+
+
     }
 
 
